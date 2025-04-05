@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>B&B Delights Menu</title>
+</head>
+
+<header>
+    <h1>B&B Delight Bakery</h1>
+    <p>Where Every Bite is a Delight!</p>
+
+
+    <div class="button">
+        <div class="dropdown">
+            <button class="dropdown-btn"> <a href="index.html">Home</a></button>
+            <div class="dropdown-content">
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+        
+    <div class="dropdown">
+        <button class="dropdown-btn"> <a href ="menu.html">Menu</a></button>
+        <div class="dropdown-content">
+            <a href="cakes.html">Cakes</a>
+            <a href="cookies.html">Cookies</a>
+            <a href="Breads.html">Breads </a>
+            <a href="Pastries.html">Pastries</a>
+            <a href="customorder.html">Custom Order</a>
+        </div>
+    </div>
+    <a href="onlineordering.html">Online Ordering</a>
+    <a href="aboutus.html">About Us</a>
+</div>
+     
+    <div class="logo">
+        <img src="image.png" alt="B&B Delights Logo">
+    </div>     
+</header>
+<body>
+    <body>
+        <div class="form-container">
+            <h2>Custom Cake Order Form</h2>
+            <form id="cakeOrderForm">
+                <label for="customRequest">Custom Request:</label>
+                <input type="text" id="customRequest" name="customRequest" placeholder="Enter your custom request...">
+                
+                <label for="flavor">Flavor:</label>
+                <input type="text" id="flavor" name="flavor" placeholder="E.g., Chocolate, Vanilla, Red Velvet">
+                
+                <label for="size">Size:</label>
+                <input type="text" id="size" name="size" placeholder="E.g., 8-inch cake, dozen cookies">
+                
+                <label for="instructions">Special Instructions:</label>
+                <textarea id="instructions" name="instructions" placeholder="Describe your request (e.g., message on cake, allergens)"></textarea>
+                
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                
+                <label for="contact">Contact Info:</label>
+                <input type="text" id="contact" name="contact" placeholder="Phone number or email">
+                
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+        <script>
+            document.getElementById("cakeOrderForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                alert("Your order has been submitted successfully!");
+            });
+        </script>
+    </body>
+</body>
+
+    <main>
+        <h2>Custom Order Request</h2>
+        <p>Need something special? Fill out the form below to place a custom order!</a></p>
+    <h2> <a href="https://forms.gle/o6T6Ep6ae5TQjXtp6"> Click Here</a></h2>
+</body>
+</html>

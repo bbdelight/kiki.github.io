@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles4.css">
+    <title>B&B Delights Menu</title>
+</head>
+
+<header>
+    <h1>B&B Delight Bakery</h1>
+    <p>Where Every Bite is a Delight!</p>
+
+    <div class="button">
+        <div class="dropdown">
+            <button class="dropdown-btn"> <a href="index.html">Home</a></button>
+            <div class="dropdown-content">
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+        
+    <div class="dropdown">
+        <button class="dropdown-btn"> <a href ="menu.html">Menu</a></button>
+        <div class="dropdown-content">
+            <a href="cakes.html">Cakes</a>
+            <a href="cookies.html">Cookies</a>
+            <a href="Breads.html">Breads </a>
+            <a href="Pastries.html">Pastries</a>
+            <a href="customorder.html">Custom Order</a>
+        </div>
+    </div>
+    <a href="onlineordering.html">Online Ordering</a>
+    <a href="aboutus.html">About Us</a>
+</div>
+    
+    <div class="logo">
+        <img src="image.png" alt="B&B Delights Logo">
+    </div>     
+</header>
+
+<body>
+    <div class="menu-container">
+        <h1>B&B Delights Menu</h1>
+        
+        <h2>Pastries</h2>
+        
+        <div class="menu-item">
+            <img src="Coconut Puff.jpg" alt="Coconut Lilikoi Puff Pastries">
+            <div class="menu-item-text">
+                <h2>🥐 Coconut Lilikoi Puff Pastries – $30.00</h2>
+                <p>Indulge in the tropical flavors of our flaky, golden puff pastries filled with a luscious blend of creamy coconut and tangy lilikoi.</p>
+                <button class="product-btn" onclick="addToCart('Coconut Lilikoi Puff Pastries', 30.00)"><a href="onlineordering.html">🛒 Add to Cart  (<span id="cart-count">0</span>)</a></button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="Pinwheel.jpg" alt="Italian Pinwheel Rolls">
+            <div class="menu-item-text">
+                <h2>🥐 Italian Pinwheel Rolls – $25.00</h2>
+                <p>These golden, flaky pinwheels are filled with Parmesan cheese, garlic, and oregano for a rich, savory flavor.</p>
+                <button class="product-btn" onclick="addToCart('Italian Pinwheel Rolls', 25.00)"><a href="onlineordering.html">🛒 Add to Cart  (<span id="cart-count">0</span>)</a></button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="puff_pastry_fruit_tarts_ricotta_cream_filling13..jpg" alt="Puff Pastry Fruit Tarts with Ricotta Cream Filling">
+            <div class="menu-item-text">
+                <h2>🥐 Puff Pastry Fruit Tarts with Ricotta Cream Filling – $40.00</h2>
+                <p>These elegant tarts offer the perfect balance of buttery flakiness, creamy ricotta filling, and natural sweetness from fresh fruits. 🍓</p>
+                <button class="product-btn" onclick="addToCart('Puff Pastry Fruit Tarts with Ricotta Cream Filling', 40.00)"><a href="onlineordering.html">🛒 Add to Cart  (<span id="cart-count">0</span>)</a></button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="pies.jpg" alt="Pastry Pies">
+            <div class="menu-item-text">
+                <h2>🥧 Pastry Pies</h2>
+                <p>Choose between our delicious homemade pies:</p>
+                <ul>
+                    <li>Beef Pie – $15.00</li>
+                    <li>Cheese Pie – $17.00</li>
+                </ul>
+                <button class="product-btn" onclick="addToCart('Beef Pie', 15.00)"><a href="onlineordering.html">🛒 Add Beef Pie to Cart  (<span id="cart-count">0</span>)</a></button>
+                <button class="product-btn" onclick="addToCart('Cheese Pie', 17.00)"><a href="onlineordering.html">🛒 Add Cheese Pie to Cart  (<span id="cart-count">0</span>)</a></button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="snack box.jpg" alt="Snack Box">
+            <div class="menu-item-text">
+                <h2>🍱 Snack Box – $100.00</h2>
+                <p>Build your perfect snack box! Choose any 3 pastries, a fresh fruit, a slice of cake, and a beverage of your choice for a delicious, customized treat. 🍰🥐🍓🥤</p>
+                <p><strong>(Note snack box order takes 3 business days to prepare )</strong></p>
+                <h3><a href="https://forms.gle/UVENYGe1TvnTQZGZA"> Place order here</a></h3>
+        </div>
+    </div>
+      <!-- Footer Section -->
+      <footer>
+        <p>&copy; 2025 B&B Delight Bakery | All Rights Reserved</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>

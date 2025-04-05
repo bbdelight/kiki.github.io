@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles4.css">
+    <title>B&B Delights Menu</title>
+</head>
+
+<header>
+    <h1>B&B Delight Bakery</h1>
+    <p>Where Every Bite is a Delight!</p>
+    
+    <div class="button">
+        <div class="dropdown">
+            <button class="dropdown-btn"> <a href="index.html">Home</a></button>
+            <div class="dropdown-content">
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+        
+    <div class="dropdown">
+        <button class="dropdown-btn"> <a href ="menu.html">Menu</a></button>
+        <div class="dropdown-content">
+            <a href="cakes.html">Cakes</a>
+            <a href="cookies.html">Cookies</a>
+            <a href="Breads.html">Breads </a>
+            <a href="Pastries.html">Pastries</a>
+            <a href="customorder.html">Custom Order</a>
+        </div>
+    </div>
+    <a href="onlineordering.html">Online Ordering</a>
+    <a href="aboutus.html">About Us</a>
+</div>
+        
+    <div class="logo">
+        <img src="image.png" alt="B&B Delights Logo">
+    </div>     
+</header>
+
+<body>
+    <div class="menu-container">
+        <h1>B&B Delights Menu</h1>
+        
+        <h2>Cookies</h2>
+        <div class="menu-item">
+            <img src="Thumbprint-Cookies938212.jpg" alt="Thumbprint Cookie">
+            <div class="menu-item-text">
+                <h2>🍪 Thumbprint Cookies – $30.00 for 1</h2>
+                <p>Buttery shortbread cookies with a dollop of sweet fruit jam in the center.</p>
+                <button class="product-btn" onclick="addToCart('Thumbprint Cookies', 30.00)"><a href="onlineordering.html">🛒 Add to Cart  (<span id="cart-count">0</span>)</a></button>
+            </div>
+        </div>
+
+    <div class="menu-item">
+        <img src="alexs-best-chocolate-chip-cookie-recipe-healthy.webp" alt="Chocolate Chip Cookie">
+        <div class="menu-item-text">
+            <h2>🍪 Classic Chocolate Chip Cookies – $40.00 for 3</h2>
+            <p>Golden, crispy-edged cookies loaded with rich, gooey chocolate chips.</p>
+            <button class="product-btn" onclick="addToCart('Chocolate Chip Cookies', 40.00)"<a href="onlineordering.html">🛒 Add to Cart  (<span id="cart-count">0</span>)</a></button>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="Sugar Cookies.jpg" alt="Sugar Cookies">
+        <div class="menu-item-text">
+            <h2>🍪 Sugar Cookies – $25.00 for 1 </h2>
+            <p> Super chewy, buttery, sweet centers and tender edges these will easily become your new favorite cookies.</p>
+            <button class="product-btn" onclick="addToCart('Double Chocolate Cookies', 25.00)"><a href="onlineordering.html">🛒 Add to Cart  (<span id="cart-count">0</span>)</a></button>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="fudgy chocolate.jpg" alt="Fudgy Chocolate Cookie">
+        <div class="menu-item-text">
+            <h2>🍪 Fudgy Chocolate Cookies – $35.00 for 1</h2>
+            <p>These fudgy chocolate cookies made with cocoa powder and chocolate chips are a dream for chocolate lovers.</p>
+            <button class="product-btn" onclick="addToCart('Fudgy Chocolate Cookies', 35.00)"><a href="onlineordering.html">🛒 Add to Cart  (<span id="cart-count">0</span>)</a></button>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="Shortbread-2.jpg" alt="Shortbread">
+        <div class="menu-item-text">
+            <h2>🥠 Buttery Shortbread – $50.00 </h2>
+            <p>Delicate, melt-in-your-mouth cookies with a rich, buttery taste and a crisp texture.</p>
+            <button class="product-btn" onclick="addToCart('Buttery Shortbread', 100.00)"><a href="onlineordering.html">🛒 Add to Cart  (<span id="cart-count">0</span>)</a></button>
+        </div>
+        </div>
+          <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 B&B Delight Bakery | All Rights Reserved</p>
+    </footer>
+    <script src="cart.js"></script>
+    </body>
+    </html>

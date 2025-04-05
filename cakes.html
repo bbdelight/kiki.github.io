@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles4.css">
+    <title>B&B Delights Menu</title>
+</head>
+
+<header>
+    <h1>B&B Delight Bakery</h1>
+    <p>Where Every Bite is a Delight!</p>
+
+    <div class="button">
+        <div class="dropdown">
+            <button class="dropdown-btn"> <a href="index.html">Home</a></button>
+            <div class="dropdown-content">
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+        
+    <div class="dropdown">
+        <button class="dropdown-btn"> <a href ="menu.html">Menu</a></button>
+        <div class="dropdown-content">
+            <a href="cakes.html">Cakes</a>
+            <a href="cookies.html">Cookies</a>
+            <a href="Breads.html">Breads </a>
+            <a href="Pastries.html">Pastries</a>
+            <a href="customorder.html">Custom Oder</a>
+        </div>
+    </div>
+    <a href="onlineordering.html">Online Ordering</a>
+    <a href="aboutus.html">About Us</a>
+</div>
+    
+
+    <div class="logo">
+        <img src="image.png" alt="B&B Delights Logo">
+    </div>     
+</header>
+
+<body>
+    <div class="menu-container">
+        <h1>B&B Delights Menu</h1>
+        
+        <h2>Cakes</h2>
+        
+        <div class="menu-item">
+            <img src="imm.jpg" alt="Strawberry Cheesecake">
+            <div class="menu-item-text">
+                <h2>🍓 Strawberry Cheesecake – $30.00</h2>
+                <p>A rich and creamy cheesecake topped with fresh strawberries and a sweet glaze.</p>
+                <button class="product-btn" onclick="addToCart('Strawberry Cheesecake', 30.00)"><a href="onlineordering.html">🛒 Add to Cart  (<span id="cart-count">0</span>)</a></button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="Flan.jpg" alt="Flan">
+            <div class="menu-item-text">
+                <h2>🍮 Flan – $40.00</h2>
+                <p>Indulge in the creamy goodness of our homemade flan! This classic dessert features a smooth custard topped with golden caramel.</p>
+                <button class="product-btn" onclick="addToCart('Flan', 40.00)"><a href="onlineordering.html">🛒 Add to Cart  (<span id="cart-count">0</span>)</a></button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="lava.jpg" alt="Chocolate Lava Cake">
+            <div class="menu-item-text">
+                <h2>🍫 Chocolate Lava Cake – $40.00</h2>
+                <p>A decadent molten chocolate cake with a warm, gooey center.</p>
+                <button class="product-btn" onclick="addToCart('Chocolate Lava Cake', 40.00)"><a href="onlineordering.html">🛒 Add to Cart  (<span id="cart-count">0</span>)</a></button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="red velvet.jpg" alt="Red Velvet Cake">
+            <div class="menu-item-text">
+                <h2>🎂 Signature Red Velvet Cake</h2>
+                <p>Moist red velvet cake with a rich cream cheese frosting.</p>
+                <ul>
+                    <li>8-inch whole cake – $150.00</li>
+                    <li>Single slice – $35.00</li>
+                </ul>
+                <button class="product-btn" onclick="addToCart('Red Velvet Cake (Whole)', 150.00)"><a href="onlineordering.html">🛒 Add Whole Cake to Cart(<span id="cart-count">0</span>)</a></button>
+                <button class="product-btn" onclick="addToCart('Red Velvet Cake (Slice)', 35.00)"><a href="onlineordering.html">🛒 Add a Slice to Cart(<span id="cart-count">0</span>)</a><</button>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="assorted.webp" alt="Cupcake Assortment">
+            <div class="menu-item-text">
+                <h2>🧁 Assorted Cupcake Box (6 pcs) – $100.00</h2>
+                <p>A delicious assortment of vanilla, chocolate, and red velvet cupcakes with toppings of your choice.</p>
+                <button class="product-btn" onclick="addToCart('Cupcake Assortment', 100.00)"><a href="onlineordering.html">🛒 Add to Cart(<span id="cart-count">0</span>)</a><</button>
+            </div>
+        </div>
+    </div>
+      <!-- Footer Section -->
+      <footer>
+        <p>&copy; 2025 B&B Delight Bakery | All Rights Reserved</p>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
